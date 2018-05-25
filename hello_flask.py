@@ -1,12 +1,8 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 from flask import Flask, jsonify, request, escape
 from flask_cors import CORS
-from my_module import showMain
-
 app = Flask(__name__,)
 CORS(app, resources=r'/*')
-
-showMain()
 
 
 def log_request(req, res):
